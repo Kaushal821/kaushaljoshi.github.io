@@ -101,3 +101,66 @@ footer {
     color: #374151;
 }
 
+/* ================================
+   Mobile Navigation
+================================ */
+.hamburger {
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: flex;
+}
+
+/* Sidebar menu */
+.mobile-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #1e293b;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 999;
+}
+
+.mobile-menu a {
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #cbd5e1;
+    display: block;
+}
+
+.mobile-menu a:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.mobile-menu .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2em;
+    color: white;
+}
+
+/* Responsive rules */
+@media screen and (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+}
+

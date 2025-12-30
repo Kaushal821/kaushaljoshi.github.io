@@ -12,15 +12,31 @@
 <nav class="navbar">
     <div class="nav-container">
         <div class="nav-title">Kaushal Joshi</div>
-        <div class="nav-links">
+
+        <!-- Desktop Navigation -->
+        <div class="nav-links desktop-only">
             <a href="index.html">Home</a>
             <a href="thesis-projects.html">Thesis & Projects</a>
             <a href="interesting-notes.html">Interesting Notes</a>
             <a href="contact.html">Contact Me</a>
             <a href="assets/CV/KAUSHAL_JOSHI_CV.pdf" target="_blank">CV</a>
         </div>
+
+        <!-- Mobile Hamburger -->
+        <div class="hamburger mobile-only" onclick="toggleMenu()">☰</div>
     </div>
 </nav>
+
+<!-- ===== Mobile Sidebar ===== -->
+<div id="mobileMenu" class="mobile-menu">
+    <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">×</a>
+    <a href="index.html">Home</a>
+    <a href="thesis-projects.html">Thesis & Projects</a>
+    <a href="interesting-notes.html">Interesting Notes</a>
+    <a href="contact.html">Contact Me</a>
+    <a href="assets/CV/KAUSHAL_JOSHI_CV.pdf" target="_blank">CV</a>
+</div>
+
 
 <!-- ===== Contact Section ===== -->
 <section>
@@ -67,6 +83,18 @@
 <footer>
     <p>© Kaushal Joshi</p>
 </footer>
+
+<!-- ===== Mobile Menu Script ===== -->
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    if (menu.style.width === "260px") {
+        menu.style.width = "0";
+    } else {
+        menu.style.width = "260px";
+    }
+}
+</script>
 
 </body>
 </html>
