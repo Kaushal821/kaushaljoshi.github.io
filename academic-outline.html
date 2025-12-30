@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Outline | Kaushal Joshi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Navigation Bar ===== -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-title">Kaushal Joshi</div>
+
+        <!-- Desktop Navigation -->
+        <div class="nav-links desktop-only">
+            <a href="index.html">Home</a>
+            <a href="academic-outline.html">Academic Outline</a>
+            <a href="thesis-projects.html">Thesis & Projects</a>
+            <a href="interesting-notes.html">Interesting Notes</a>
+            <a href="contact.html">Contact</a>
+            <a href="assets/CV/KAUSHAL_JOSHI_CV.pdf" target="_blank">CV</a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <div class="hamburger mobile-only" onclick="toggleMenu()">☰</div>
+    </div>
+</nav>
+
+<!-- ===== Mobile Sidebar ===== -->
+<div id="mobileMenu" class="mobile-menu">
+    <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">×</a>
+    <a href="index.html">Home</a>
+    <a href="academic-outline.html">Academic Outline</a>
+    <a href="thesis-projects.html">Thesis & Projects</a>
+    <a href="interesting-notes.html">Interesting Notes</a>
+    <a href="contact.html">Contact</a>
+    <a href="assets/CV/KAUSHAL_JOSHI_CV.pdf" target="_blank">CV</a>
+</div>
+
+<!-- ===== Academic Outline ===== -->
+<section>
+    <h2>Academic Outline</h2>
+    <p>
+        This page provides a concise overview of my academic background,
+        research trajectory, and current research focus.
+    </p>
+</section>
+
+<section>
+    <h3>Education</h3>
+    <div class="card">
+        <p><strong>PhD in Theoretical Physics</strong><br>
+        Indian Institute of Technology (BHU), Varanasi<br>
+        <em>Ongoing</em></p>
+
+        <p><strong>MSc in Physics</strong><br>
+        Visvesvaraya National Institute of Technology (VNIT), Nagpur</p>
+
+        <p><strong>BSc in Physics (Hons.)</strong><br>
+        Motilal Nehru College, University of Delhi, New Delhi</p>
+    </div>
+</section>
+
+<section>
+    <h3>Research Trajectory</h3>
+    <div class="card">
+        <ul>
+            <li>Early training in quantum mechanics, mathematical physics, and classical field theory.</li>
+            <li>MSc thesis focused on entanglement properties of AKLT spin-1 systems.</li>
+            <li>Exposure to quantum information theory, covariance matrix criteria, and multi-qubit entanglement.</li>
+            <li>Current PhD research centered on quantum entanglement, many-body spin systems, and numerical simulations.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h3>Technical & Computational Skills</h3>
+    <div class="card">
+        <ul>
+            <li>Programming: Fortran, Python, Bash, C, C++</li>
+            <li>Numerical methods: DMRG, QMC, Exact diagonalization, density matrix techniques</li>
+            <li>Parallel computing: MPI, OpenACC (GPU acceleration)</li>
+            <li>Scientific tools: LaTeX, Git, Mathematica, Linux-based workflows</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h3>Current Research Focus</h3>
+    <div class="card">
+        <p>
+            My current research focuses on understanding quantum correlations
+            and entanglement in interacting spin systems. I am particularly
+            interested in the role of information-theoretic quantities in
+            characterizing quantum phases and thermodynamic behavior in
+            many-body systems.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h3>Future Directions</h3>
+    <div class="card">
+        <p>
+            I aim to further explore the intersection of quantum information
+            theory and quantum thermodynamics, with an emphasis on scalable
+            numerical methods and analytical insights applicable to strongly
+            correlated quantum systems.
+        </p>
+    </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+    <p>© Kaushal Joshi</p>
+</footer>
+
+<!-- ===== Mobile Menu Script ===== -->
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    if (menu.style.width === "260px") {
+        menu.style.width = "0";
+    } else {
+        menu.style.width = "260px";
+    }
+}
+</script>
+
+</body>
+</html>
+
